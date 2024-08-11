@@ -150,6 +150,7 @@
 										class="contactForm">
 
 										<div id="sendmessag" style="font-size:20px; color:green"></div>
+										<div id="errmessag" style="font-size:20px; color:rgb(255, 0, 0)"></div>
 
 										<div class="row">
 											<div class="col-md-6">
@@ -394,6 +395,7 @@
 		let subject = document.getElementById('subject')
 		let message = document.getElementById('form_message')
 		let success = document.getElementById("sendmessag")
+		let error = document.getElementById("errmessag")
 
 		let nameErr = document.getElementById("fname_error_message")
 		let emailErr = document.getElementById("email_error_message")
@@ -483,15 +485,16 @@
 			if (nameMsg.length == 0 && emailMsg.length == 0 && subMsg.length == 0 && msgMsg.length == 0) {
 
 				e.preventDefault()
+				alert
 				$.ajax({
-					
+					url: "https://script.google.com/macros/s/AKfycbxdBae4KWFRf0YOLPVRHI8YSSZocA4ii-Zr6pdbX16R4VeHlWQk_wExuBu-jZDdFKwb/exec",
 					data: $("#contactForm").serialize(),
 					method: "post",
 					success: function (response) {
 						success.innerHTML = "Your message has been sent. Thank you!"
 					},
 					error: function (err) {
-						success.innerHTML = "Your message has been sent. Thank you!"
+						error.innerHTML = "Massage sent Failed"
 						console.log(err, "error");
 
 					}
