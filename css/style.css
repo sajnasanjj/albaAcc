@@ -3502,7 +3502,7 @@ input[type="button"].btn-block {
     text-decoration: none; }
 
         .navbar-brand img {
-          width:214px ;
+          width:200px ;
           height:124px ;
         }
   
@@ -9415,7 +9415,7 @@ textarea.form-control {
   .info-wrap .dbox {
     width: 100%;
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 25px; }
+    margin-bottom: 20px; }
     .info-wrap .dbox:last-child {
       margin-bottom: 0; }
     .info-wrap .dbox p {
