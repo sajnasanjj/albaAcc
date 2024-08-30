@@ -13255,7 +13255,7 @@ textarea.form-control {
 
 .ftco-faqs .img-faqs {
   position: relative;
-  height: 500px;
+  height: 650px;
   z-index: 0;
 }
 
@@ -14075,3 +14075,13 @@ textarea.form-control {
     left: 0;
   }
 }
+
+.footer .form-group .button:hover{
+   cursor: pointer;
+   font-weight: bold;
+  }
+  .footer li:hover{
+      cursor: pointer;
+      font-weight: bold;
+      color: #002752;
+    }
