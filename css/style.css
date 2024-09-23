@@ -4913,8 +4913,15 @@ input[type="button"].btn-block {
 }
 
 .navbar-brand img {
-  width: 200px;
   height: 124px;
+  margin-left: -25px;
+  width: 340px;
+}
+.footer .navbar-brand img {
+  height: 124px;
+  margin-left: -10px;
+  width: 290px;
+ 
 }
 
 
